@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  小功能封装
+//
+//  Created by macPro on 16/7/29.
+//  Copyright © 2016年 macPro. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define TCUserDefaults [NSUserDefaults standardUserDefaults]
+#define TCScreenW      [UIScreen mainScreen].bounds.size.width
+#define TCScreenH      [UIScreen mainScreen].bounds.size.height
+
+#define TCJSon(data)   [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]
+#define TCColor(r,g,b,p) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:p]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define TCRect(x,y,w,h) CGRectMake(x, y, w, h)
+
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

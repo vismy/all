@@ -14,6 +14,8 @@
 		8E7A1D731D4B05BC00089C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A1D721D4B05BC00089C50 /* Assets.xcassets */; };
 		8E7A1D761D4B05BC00089C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A1D741D4B05BC00089C50 /* LaunchScreen.storyboard */; };
 		8E7A1D811D4B05BC00089C50 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A1D801D4B05BC00089C50 /* _____Tests.m */; };
+		8E7A1D911D4B087700089C50 /* NSString+TCStringDealer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A1D901D4B087700089C50 /* NSString+TCStringDealer.m */; };
+		8E7A1D941D4B0DE800089C50 /* NSObject+TCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A1D931D4B0DE800089C50 /* NSObject+TCTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		8E7A1D7C1D4B05BC00089C50 /* 小功能封装Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "小功能封装Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A1D801D4B05BC00089C50 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
 		8E7A1D821D4B05BC00089C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7A1D8B1D4B069E00089C50 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8E7A1D8F1D4B087700089C50 /* NSString+TCStringDealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TCStringDealer.h"; sourceTree = "<group>"; };
+		8E7A1D901D4B087700089C50 /* NSString+TCStringDealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TCStringDealer.m"; sourceTree = "<group>"; };
+		8E7A1D921D4B0DE800089C50 /* NSObject+TCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TCTool.h"; sourceTree = "<group>"; };
+		8E7A1D931D4B0DE800089C50 /* NSObject+TCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TCTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 		8E7A1D5A1D4B05BC00089C50 = {
 			isa = PBXGroup;
 			children = (
+				8E7A1D8B1D4B069E00089C50 /* PrefixHeader.pch */,
 				8E7A1D651D4B05BC00089C50 /* 小功能封装 */,
 				8E7A1D7F1D4B05BC00089C50 /* 小功能封装Tests */,
 				8E7A1D641D4B05BC00089C50 /* Products */,
@@ -81,6 +89,10 @@
 		8E7A1D651D4B05BC00089C50 /* 小功能封装 */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A1D8F1D4B087700089C50 /* NSString+TCStringDealer.h */,
+				8E7A1D901D4B087700089C50 /* NSString+TCStringDealer.m */,
+				8E7A1D921D4B0DE800089C50 /* NSObject+TCTool.h */,
+				8E7A1D931D4B0DE800089C50 /* NSObject+TCTool.m */,
 				8E7A1D691D4B05BC00089C50 /* AppDelegate.h */,
 				8E7A1D6A1D4B05BC00089C50 /* AppDelegate.m */,
 				8E7A1D6C1D4B05BC00089C50 /* ViewController.h */,
@@ -211,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7A1D911D4B087700089C50 /* NSString+TCStringDealer.m in Sources */,
 				8E7A1D6E1D4B05BC00089C50 /* ViewController.m in Sources */,
 				8E7A1D6B1D4B05BC00089C50 /* AppDelegate.m in Sources */,
 				8E7A1D681D4B05BC00089C50 /* main.m in Sources */,
+				8E7A1D941D4B0DE800089C50 /* NSObject+TCTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +418,7 @@
 				8E7A1D871D4B05BC00089C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7A1D881D4B05BC00089C50 /* Build configuration list for PBXNativeTarget "小功能封装Tests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +427,7 @@
 				8E7A1D8A1D4B05BC00089C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
